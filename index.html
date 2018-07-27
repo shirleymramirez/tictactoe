@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="modal-fade" id="myModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title text-center">Tic Tac Toe Game</h4>
+                </div>
+                <div class="modal-body">
+                    <h3>Welcome to the TicTacToe Game!</h3>
+                    <p>It's time to choose your figure.</p>
+                    <p id="test"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="x" class="btn" data-dismiss="modal" onclick="setFig(this.id)">
+                        <span class="fa fa-circle-o"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="game">
+        <div id="first" onclick="icon(this.id)" class="game-field"></div>
+        <div id="second" onclick="icon(this.id)" class="game-field"></div>
+        <div id="third" onclick="icon(this.id)" class="game-field"></div>
+        <div id="fourth" onclick="icon(this.id)" class="game-field"></div>
+        <div id="fifth" onclick="icon(this.id)" class="game-field"></div>
+        <div id="sixth" onclick="icon(this.id)" class="game-field"></div>
+        <div id="sevent" onclick="icon(this.id)" class="game-field"></div>
+        <div id="eight" onclick="icon(this.id)" class="game-field"></div>
+        <div id="nineth" onclick="icon(this.id)" class="game-field"></div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
