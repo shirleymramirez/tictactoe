@@ -26,8 +26,11 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" id="x" class="btn" data-dismiss="modal" onclick="setFig(this.id)">
-                        <span class="fa fa-circle-o"></span>
+                        <span class="fa fa-times"></span>
                     </button>
+                    <button type="button" id="o" class="btn" data-dismiss="modal" onclick="setFig(this.id)">
+                            <span class="fa fa-circle-o"></span>
+                        </button>
                 </div>
             </div>
         </div>
@@ -44,7 +47,7 @@
         <div id="eight" onclick="icon(this.id)" class="game-field"></div>
         <div id="nineth" onclick="icon(this.id)" class="game-field"></div>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="app.js"></script>
 </body>
